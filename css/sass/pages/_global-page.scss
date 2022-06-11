@@ -1,0 +1,17 @@
+body {
+    font: {
+        family: tahoma;
+        size: 1rem;
+    }
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0
+}
+
+a {
+    text-decoration: none;
+}

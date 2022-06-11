@@ -1,0 +1,23 @@
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+@import 'sass/layout/grid';
+@import 'sass/components/buttons';
+@import 'sass/components/heading';
+
+@import 'sass/pages/global-page';
+@import 'sass/layout/header';
+@import 'sass/pages/homepages';
+@import 'sass/layout/footers';
+
+.the-toggler {
+    background-color: #e2494c;
+    width: fit-content;
+    border: none;
+    padding: 0.5rem;
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

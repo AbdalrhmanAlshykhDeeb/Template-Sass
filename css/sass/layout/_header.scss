@@ -1,0 +1,84 @@
+header {
+    padding: 1.2rem 0;
+    border-bottom: 1px solid $gry-color;
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $min-medium) {
+            flex-direction: column;
+        }
+    }
+
+    .logo {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: relative;
+
+        h1 {
+            margin-bottom: 0;
+
+            @media(max-width: $max-mobile) {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: $min-medium) {
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (max-width: $max-mobile) {
+            width: 100%;
+            text-align: start;
+        }
+    }
+
+    .navbar {
+        width: 70%;
+        display: flex;
+        justify-content: end;
+        background-color: $red-color;
+        border-radius: 0.9rem;
+
+        @media (max-width: $min-medium) {
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (max-width: $max-mobile) {
+            display: none;
+            border-radius: unset;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            font-size: 1.2rem;
+            width: 20%;
+
+            @media (max-width: $max-mobile) {
+                justify-content: start;
+                width: 100%;
+                padding-inline-start: 0.6rem;
+            }
+
+            a {
+                display: block;
+                padding: 0.9rem 0.6rem;
+                transition: $transition;
+                color: white;
+
+                &:hover {
+                    color: #DDD;
+                }
+            }
+        }
+    }
+
+}

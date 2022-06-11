@@ -1,0 +1,28 @@
+* {
+    @include prefixer(box-sizing, border-box, webkit moz o ms)
+}
+
+.container {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+
+    @media (min-width: $min-small) {
+        width: 750px;
+    }
+
+    @media (min-width: $min-medium) {
+        width: 970px;
+    }
+
+    @media (min-width: $min-larg) {
+        width: 1170px;
+    }
+}
+
+@media (max-width: $max-mobile) {
+    .text-center-xs {
+        text-align: center;
+    }
+}
