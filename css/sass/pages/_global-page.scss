@@ -1,3 +1,9 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     font: {
         family: tahoma;
@@ -15,3 +21,4 @@ ol {
 a {
     text-decoration: none;
 }
+
